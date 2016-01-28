@@ -32,3 +32,7 @@ function getSearch(searchval) {
 function getAllStore(){
     return baseApi+"api/getAllStore";
 }
+
+function setCookie(cname, cvalue) {
+    document.cookie = cname + "=" + cvalue;
+}

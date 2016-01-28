@@ -20,6 +20,8 @@
     "https://*/*",
     "background",
     "cookies",
+    "storage",
+    "sessions",
     "*://*.google.com/"
   ],
   "content_scripts": [
