@@ -5,5 +5,4 @@ chrome.runtime.onInstalled.addListener(function (details) {
 });
 
 chrome.browserAction.setBadgeText({ text: '\'lafa' });
-
 console.log('\'lafa \'lafa! Event Page for Browser Action');
