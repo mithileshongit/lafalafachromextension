@@ -1,65 +1,66 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <!-- build:css styles/popup-vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css styles/main.css -->
-    <script type="text/javascript" src="scripts/lib/jquery/jquery.js"></script>
-	<script type="text/javascript" src="scripts/lib/jquery-ui.js"></script>	
-	<script type="text/javascript" src="scripts/lib/jquery-latest.js"></script>
-	<script type="text/javascript" src="scripts/lib/handlebars.runtime.js"></script>
-    <script type="text/javascript" src="scripts/lib/handlebars-1.0.0.beta.6.js"></script>
-    <script type="text/javascript" src="scripts/paycash.js"></script>
-    <script type="text/javascript" src="scripts/searchbar.js"></script>
-    <script type="text/javascript" src="scripts/topstore.js"></script>
-    <script type="text/javascript" src="scripts/hotoffers.js"></script>  
-	<script type="text/javascript" src="scripts/popup.js"></script>
-    <link href="styles/main.css" rel="stylesheet">
-    <!-- endbuild -->
-  </head>
-  <body width="380">		
-			<div class="container"> 
-				<div class="exheader">
-					<div class="logo"></div>
-                    <div id="pay"><div class="payLoader"></div></div>
-                    <div class="clear"></div>
-                    <div class="search">
-						<input id="tags" onkeyup="keyupFunction()" type="text" placeholder="Search for stores or banks offers or Product Categories ">
-											
-						<div class="searchContainer"><ul id="menu-container"></ul></div>
-					</div>
-				</div>
-                <div id="tabs">
-                  <ul>
+    <head>
+        <meta charset="utf-8">
+        <!-- build:css styles/popup-vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css styles/main.css -->
+        <script type="text/javascript" src="scripts/config.js"></script>
+        <script type="text/javascript" src="scripts/lib/jquery/jquery.js"></script>
+        <script type="text/javascript" src="scripts/lib/jquery-ui.js"></script>	
+        <script type="text/javascript" src="scripts/lib/jquery-latest.js"></script>
+        <script type="text/javascript" src="scripts/lib/handlebars.runtime.js"></script>
+        <script type="text/javascript" src="scripts/lib/handlebars-1.0.0.beta.6.js"></script>
+        <script type="text/javascript" src="scripts/paycash.js"></script>
+        <script type="text/javascript" src="scripts/searchbar.js"></script>
+        <script type="text/javascript" src="scripts/topstore.js"></script>
+        <script type="text/javascript" src="scripts/hotoffers.js"></script>  
+        <script type="text/javascript" src="scripts/popup.js"></script>
+        <link href="styles/main.css" rel="stylesheet">
+        <!-- endbuild -->
+    </head>
+    <body width="380">		
+        <div class="container"> 
+            <div class="exheader">
+                <div class="logo"></div>
+                <div id="pay"><div class="payLoader"></div></div>
+                <div class="clear"></div>
+                <div class="search">
+                    <input id="tags" onkeyup="keyupFunction()" type="text" placeholder="Search for stores or banks offers or Product Categories ">
+
+                    <div class="searchContainer"><ul id="menu-container"></ul></div>
+                </div>
+            </div>
+            <div id="tabs">
+                <ul>
                     <li><a href="javascript:void(0);" data-container-id="#result" class="tab-toggle selected">Stores</a></li>
                     <li><a href="javascript:void(0);" class="tab-toggle" data-container-id="#result2">Hot Offers</a></li>
-                  </ul>
-                  <div class="clear"></div>
-                  
-                  <div class="tabsContainer">
-                      <div id="result" class="result-container">                        
-						<div class="allOfferLoader"></div>
-					  </div>
-					  <div id="result2" style="display:none;" class="result-container"><div class="hotsOfferLoader"></div></div>
-					  <div class="clear"></div>
-					  <div id="error"></div>
-                  </div>
-                 </div>
-                </div>
-				
-                <div class="exfooter">
-                	<div class="copyRight">Yellow Brick Road Digital Marketing Pvt. Ltd @ 2014. All rights reserved.</div>
-                    <div class="SiteSeal">
-                    	<p class="ssl"><img src="images/ssl.png" alt="SSL"></p>
-                    	<p>Site Seal by GoDaddy</p>                        
-                        <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+
+                <div class="tabsContainer">
+                    <div id="result" class="result-container">                        
+                        <div class="allOfferLoader"></div>
                     </div>
+                    <div id="result2" style="display:none;" class="result-container"><div class="hotsOfferLoader"></div></div>
                     <div class="clear"></div>
-                </div> 
-			</div>
+                    <div id="error"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="exfooter">
+            <div class="copyRight">Yellow Brick Road Digital Marketing Pvt. Ltd @ 2014. All rights reserved.</div>
+            <div class="SiteSeal">
+                <p class="ssl"><img src="images/ssl.png" alt="SSL"></p>
+                <p>Site Seal by GoDaddy</p>                        
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div> 
+    </div>
 
     <!-- build:js scripts/popup-vendor.js -->
     <!-- bower:js -->
@@ -70,5 +71,5 @@
     <script type="text/javascript" src="scripts/lib/jquery.js"></script>
     <script src="scripts/popup.js"></script>-->
     <!-- endbuild -->
-  </body>
+</body>
 </html>

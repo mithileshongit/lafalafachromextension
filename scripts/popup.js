@@ -1,25 +1,12 @@
-
-
 (function($){
-	//check cookie
-	chrome.cookies.get({ url: 'https://www.lafalafa.com/lafalafafront/', name: 'customerID' },
+	chrome.cookies.get({ url: baseAPI(), name: 'customerID' },
 	function (cookie) {
 	if (cookie) {
-	//var cId = (cookie.value);
 	var customerId = (cookie.value);
-	
-	
- //$.template("dealTemplate", dealTemplate);
- //for payable Summary
-
-
- Summary(customerId);
- getAllStoreList();
- getHotOffers();
- //MatchUrl();
-
-
-	$(document).on('click','.tab-toggle', function(e){
+        Summary(customerId);
+        getAllStoreList();
+        getHotOffers();
+        $(document).on('click','.tab-toggle', function(e){
 		e.preventDefault();
 		$('.result-container').hide();
 		$('.tab-toggle').removeClass('selected');
@@ -27,16 +14,11 @@
 		$(this).addClass('selected');
 	});
 	$(".logo").on('click', function(){
-     window.open("https://www.lafalafa.com/lafalafafront/");    
+            window.open(baseAPI());    
 	});
-	
-
-
-	
 }
-//go to login page
 else {
-  window.open("https://www.lafalafa.com/lafalafafront/customers/login");
+  window.open(getCustomerLogin());
 }
 });
 }(jQuery));
