@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "LafaLafa",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "LafaLafa give extra cashback on every online shopping through LafaLafa",
+    "description": "The description of the application"
+  }
+}
