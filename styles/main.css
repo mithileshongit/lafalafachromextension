@@ -361,15 +361,4 @@ div.tabContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f
 div.tabContent.hide { display: none; }
 
 /* Push Notification css */
-div.lafa_notification {
-    position: fixed;
-    right: 10px;
-    border-radius: 4px;
-    box-shadow: rgba(0,0,0,0.5) 0 0 10px;
-    background: #fff;
-    font-size: 100%;
-    overflow: hidden;
-    z-index: 2147483647 !important;
-    box-sizing: content-box !important;
-}
 
